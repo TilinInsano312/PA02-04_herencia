@@ -13,6 +13,22 @@ public class Tablet extends Dispositivo{
         this.acesorios = acesorios;
     }
 
+    public String getResolucion() {
+        return resolucion;
+    }
+
+    public void setResolucion(String resolucion) {
+        this.resolucion = resolucion;
+    }
+
+    public List<String> getAcesorios() {
+        return acesorios;
+    }
+
+    public void setAcesorios(List<String> acesorios) {
+        this.acesorios = acesorios;
+    }
+
     @Override
     public String toString() {
         return "Tablet{" +

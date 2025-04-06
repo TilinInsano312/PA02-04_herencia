@@ -18,6 +18,54 @@ public class ComputadorEscritorio extends Dispositivo {
         this.anioPantalla = anioPantalla;
     }
 
+    public String getGpu() {
+        return gpu;
+    }
+
+    public void setGpu(String gpu) {
+        this.gpu = gpu;
+    }
+
+    public String getPsu() {
+        return psu;
+    }
+
+    public void setPsu(String psu) {
+        this.psu = psu;
+    }
+
+    public String getGabinete() {
+        return gabinete;
+    }
+
+    public void setGabinete(String gabinete) {
+        this.gabinete = gabinete;
+    }
+
+    public String getMarcaPantalla() {
+        return marcaPantalla;
+    }
+
+    public void setMarcaPantalla(String marcaPantalla) {
+        this.marcaPantalla = marcaPantalla;
+    }
+
+    public String getModeloPantalla() {
+        return modeloPantalla;
+    }
+
+    public void setModeloPantalla(String modeloPantalla) {
+        this.modeloPantalla = modeloPantalla;
+    }
+
+    public String getAnioPantalla() {
+        return anioPantalla;
+    }
+
+    public void setAnioPantalla(String anioPantalla) {
+        this.anioPantalla = anioPantalla;
+    }
+
     @Override
     public String toString() {
         return "ComputadorEscritorio{" +
