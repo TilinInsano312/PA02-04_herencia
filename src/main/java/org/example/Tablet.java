@@ -1,11 +1,12 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Tablet extends Dispositivo{
 
     private String resolucion;
-    private List<String> acesorios;
+    private List<String> acesorios = new ArrayList<>();
 
     public Tablet(String marca, String modelo, String procesador, String ram, String almacenamiento, int precio, int anio, int stock, String resolucion, List<String> acesorios) {
         super(marca, modelo, procesador, ram, almacenamiento, precio, anio, stock);

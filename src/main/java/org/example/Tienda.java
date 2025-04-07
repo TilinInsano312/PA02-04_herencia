@@ -1,14 +1,17 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Tienda {
     private String direccion;
-    private List<Dispositivo> catalogo;
+    private List<Dispositivo> catalogo = new ArrayList<>();
+    private List<Cliente> clientes = new ArrayList<>();
 
-    public Tienda(String direccion, List<Dispositivo> catalogo) {
+    public Tienda(String direccion, List<Dispositivo> catalogo, List<Cliente> clientes) {
         this.direccion = direccion;
         this.catalogo = catalogo;
+        this.clientes = clientes;
     }
 
     public String getDireccion() {
@@ -27,11 +30,20 @@ public class Tienda {
         this.catalogo = catalogo;
     }
 
+    public List<Cliente> getClientes() {
+        return clientes;
+    }
+
+    public void setClientes(List<Cliente> clientes) {
+        this.clientes = clientes;
+    }
+
     @Override
     public String toString() {
         return "Tienda{" +
                 "direccion='" + direccion + '\'' +
                 ", catalogo=" + catalogo +
+                ", clientes=" + clientes +
                 '}';
     }
 }
