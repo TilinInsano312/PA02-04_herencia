@@ -1,10 +1,11 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Boleta {
-    private List<Dispositivo> compras;
+    private List<Dispositivo> compras = new ArrayList<>();
     private Tienda tienda;
     private Cliente cliente;
     private Date fecha;
